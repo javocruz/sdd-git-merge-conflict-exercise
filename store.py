@@ -14,6 +14,8 @@ def calculate_total(
         subtotal *= 0.9
     if apply_tax == True:
         subtotal = subtotal * 1.08
+    if apply_shipping == True:
+        subtotal += 5
 
     total = subtotal
 
